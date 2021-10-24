@@ -189,6 +189,8 @@ public class ScreeningService {
         screeningOrg.setDate(LocalDate.parse(date,dateFormatter));
         screeningOrg.setMovie(movieRepository.findById(movieId).orElseThrow());
 
+        // missing ticket updation !
+
         return new ScreeningDTO(screeningRepository.save(screeningOrg));
     }
 

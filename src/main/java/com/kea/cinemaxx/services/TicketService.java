@@ -38,7 +38,7 @@ public class TicketService {
         if (user.isAdmin()) {
             return TicketDTO.TicketDTOSfromTicket(ticketRepository.findTicketByPurchasedAndScreening_ScreeningId(purchased, screeningId));
         }
-        
+
         else {
             throw UNAUTHORIZED_USER;
         }
@@ -127,16 +127,12 @@ public class TicketService {
             TicketDTO newTicket = new TicketDTO(ticketRepository.save(ticketOrg));
 //            ticketRepository.deleteById(ticketId); // can't actually be deleted like that!
         }
-
         else throw UNAUTHORIZED_USER; //exception declared above
-
     }
 
     public Ticket resetTicket(Ticket ticket) {
-
         ticket.setPurchased(false);
         ticket.setUser(new User(1)); //free tickets default to admin user
-
         return ticket;
     }
 
