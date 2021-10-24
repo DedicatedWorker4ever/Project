@@ -6,8 +6,8 @@ import java.sql.Statement;
 
 public class DBSetup {
     String username = "root";
-    String password = "Ac35#jd1";
-    String url = "jdbc:mysql://54.83.119.163:3306";
+    String password = "root";
+    String url = "jdbc:mysql://54.86.175.88/:3306";
     private Connection conn;
     String schemaName = "cinemaxxx";
 
