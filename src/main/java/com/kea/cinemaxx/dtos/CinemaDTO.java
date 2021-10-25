@@ -22,6 +22,7 @@ public class CinemaDTO {
     String name;
     
     //Sambo
+    //hello
 
     public CinemaDTO(int numOfHalls, String address, int zipCode, String name) {
         this.numOfHalls = numOfHalls;
