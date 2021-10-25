@@ -41,5 +41,6 @@ public class HallDTO {
         return new Hall(hall.getNumberOfSeats(), hall.getCinema());
     }
 
+    //sambo2
 
 }
