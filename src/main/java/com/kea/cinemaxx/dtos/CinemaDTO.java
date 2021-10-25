@@ -20,6 +20,8 @@ public class CinemaDTO {
     String address;
     int zipCode;
     String name;
+    
+    //Sambo
 
     public CinemaDTO(int numOfHalls, String address, int zipCode, String name) {
         this.numOfHalls = numOfHalls;
